@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Plantilla reutilizable para el Proyecto Final: Radio Nueva Criatura 88.1 FM.">
+  <title>Radio Nueva Criatura 88.1 FM | Template</title>
+  <link rel="stylesheet" href="SiteStyle/global.css">
+</head>
+
+<body>
+  <!-- PLANTILLA: Copia esta página y cambia el contenido según la sección (Sobre Nosotros / Programación / Contacto) -->
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="wrapper">
+
+      <div class="logo-area">
+        <div id="logo">
+          <img src="SiteImage/logo.png" alt="Logo de Radio Nueva Criatura 88.1 FM">
+          <div>
+            <p class="brand-title"><strong>Radio Nueva Criatura 88.1 FM</strong></p>
+            <p class="brand-sub">“La Que Guarda Tu Corazón”</p>
+          </div>
+        </div>
+        <span class="badge">Template</span>
+      </div>
+
+      <nav class="primary-nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="template.html" aria-current="page">Template</a></li>
+          <li><a href="#" title="Crea esta página con la plantilla">Sobre Nosotros</a></li>
+          <li><a href="#" title="Crea esta página con la plantilla">Programación</a></li>
+          <li><a href="#" title="Crea esta página con la plantilla">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <section class="banner" aria-label="Banner superior">
+        <img src="SiteImage/banner.jpg" alt="Banner principal de Radio Nueva Criatura 88.1 FM">
+        <div class="banner-text">
+          <h2><!-- Cambia este texto según la página -->Título del Banner</h2>
+          <p><!-- Cambia este texto según la página -->Frase corta / mensaje bíblico / enfoque de la sección.</p>
+        </div>
+      </section>
+
+    </div>
+  </header>
+
+  <div class="wrapper layout">
+
+    <main id="contenido">
+      <h1><!-- Cambia: Título Principal --></h1>
+
+      <section class="clearfix">
+        <h2><!-- Tópico #1 --></h2>
+        <img class="float-right" src="SiteImage/estudio.jpg" alt="Imagen relacionada (puedes cambiarla)">
+        <p><!-- Párrafo --></p>
+        <p><!-- Párrafo --></p>
+      </section>
+
+      <section>
+        <h2><!-- Tópico #2 --></h2>
+        <p><!-- Aquí puedes usar listas, tablas, etc. --></p>
+
+        <table>
+          <caption>Ejemplo de Tabla</caption>
+          <thead>
+            <tr>
+              <th scope="col">Columna 1</th>
+              <th scope="col">Columna 2</th>
+              <th scope="col">Columna 3</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Dato</td>
+              <td>Dato</td>
+              <td>Dato</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>
+          Link externo relacionado:
+          <a href="https://radionuevacriatura.net/" target="_blank" rel="noopener">radionuevacriatura.net</a>
+        </p>
+      </section>
+
+      <figure>
+        <img src="SiteImage/logo.png" alt="Logo oficial de Radio Nueva Criatura 88.1 FM">
+        <figcaption><!-- Descripción de la imagen --></figcaption>
+      </figure>
+
+    </main>
+
+    <aside aria-label="Barra lateral">
+      <h2>Accesos rápidos</h2>
+      <ul>
+        <li><a href="https://radionuevacriatura.net/" target="_blank" rel="noopener">Website oficial</a></li>
+        <li><a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a></li>
+        <li><a href="https://www.youtube.com/" target="_blank" rel="noopener">YouTube</a></li>
+      </ul>
+    </aside>
+
+  </div>
+
+  <footer class="wrapper">
+    <p class="small">
+      © <span id="year"></span> Radio Nueva Criatura 88.1 FM. Todos los derechos reservados.
+    </p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
