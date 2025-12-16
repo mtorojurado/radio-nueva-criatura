@@ -3,22 +3,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Sitio oficial de Radio Nueva Criatura 88.1 FM: alabanza, Palabra y mensajes edificantes 24/7.">
-  <title>Radio Nueva Criatura 88.1 FM | Inicio</title>
-
-  <!-- Vinculando el archivo CSS separado (requisito del laboratorio) -->
+  <meta name="description" content="Plantilla reutilizable para el Proyecto Final: Radio Nueva Criatura 88.1 FM.">
+  <title>Radio Nueva Criatura 88.1 FM | Sobre Nosotros</title>
   <link rel="stylesheet" href="SiteStyle/global.css">
 </head>
 
 <body>
-  <!-- Comentario: Enlace para accesibilidad -->
+  <!-- PLANTILLA: Copia esta página y cambia el contenido según la sección (Sobre Nosotros / Programación / Contacto) -->
   <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
   <header class="site-header">
     <div class="wrapper">
 
       <div class="logo-area">
-        <!-- Requisito: Elemento <div> para el logo -->
         <div id="logo">
           <img src="SiteImage/logo.png" alt="Logo de Radio Nueva Criatura 88.1 FM">
           <div>
@@ -26,25 +23,57 @@
             <p class="brand-sub">“La Que Guarda Tu Corazón”</p>
           </div>
         </div>
-
-        <span class="badge">Plantilla (Laboratorio #3)</span>
+        <span class="badge">Template</span>
       </div>
 
-      <!-- Requisito: Barra de navegación para cambiar de página -->
       <nav class="primary-nav" aria-label="Navegación principal">
   <ul>
     <li><a href="index.html" >Inicio</a></li>
-    <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+    <li><a href="sobre-nosotros.html" aria-current="page">Sobre Nosotros</a></li>
     <li><a href="programacion.html">Programación</a></li>
     <li><a href="contacto.html">Contacto</a></li>
   </ul>
 </nav>
 
-      <!-- Requisito: Banner superior con gráfico y texto -->
-      
-    </main>
+      <section class="banner" aria-label="Banner superior">
+        <img src="SiteImage/banner.jpg" alt="Banner principal de Radio Nueva Criatura 88.1 FM">
+        <div class="banner-text">
+          <h2><!-- Cambia este texto según la página -->Título del Banner</h2>
+          <p><!-- Cambia este texto según la página -->Frase corta / mensaje bíblico / enfoque de la sección.</p>
+        </div>
+      </section>
 
-    <!-- Requisito: Barra lateral (sidebar) -->
+    </div>
+  </header>
+
+  <div class="wrapper layout">
+
+    <main id="contenido">
+
+<section class="card" aria-label="Sobre nosotros">
+  <h1>Sobre Nosotros</h1>
+  <div class="float-wrap">
+    <img class="float-right" src="SiteImage/logo.png" alt="Logo de Radio Nueva Criatura 88.1 FM">
+    <p>
+      Radio Nueva Criatura 88.1 FM es un proyecto con propósito: llevar la Palabra de Dios, alabanza y mensajes que edifican.
+      Queremos que cada persona que entre a este espacio sienta paz, dirección y esperanza en Cristo.
+    </p>
+    <p class="small">
+      <strong>Misión:</strong> informar, motivar y conectar con la comunidad con contenido cristiano sano.
+    </p>
+  </div>
+</section>
+
+<section class="card" aria-label="Versículo de enfoque">
+  <h2>Versículo de enfoque</h2>
+  <p>
+    <strong>“Lámpara es a mis pies tu palabra, y lumbrera a mi camino.”</strong><br>
+    <em>Salmo 119:105</em>
+  </p>
+</section>
+
+</main>
+
     <aside aria-label="Barra lateral">
   <h2>Versículo del día</h2>
   <p class="small">
@@ -71,18 +100,12 @@
 
   </div>
 
-  <!-- Requisito: Pie de página (footer) -->
   <footer class="wrapper">
     <p class="small">
-      © <span id="year"></span> Radio Nueva Criatura 88.1 FM. Todos los derechos reservados.<br>
-      “La Que Guarda Tu Corazón” — Gracias por apoyar este ministerio.
-    </p>
-    <p class="small">
-      Pequeña broma santa: aquí no se cae el sistema… ¡aquí lo levantamos en oración! 😄
+      © <span id="year"></span> Radio Nueva Criatura 88.1 FM. Todos los derechos reservados.
     </p>
   </footer>
 
-  <!-- Comentario: Script mínimo solo para el año (no es requerido, pero no afecta) -->
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
